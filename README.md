@@ -7,6 +7,13 @@ on the mic, and a **rapplication skin** — your own UI injected OVER the
 factory chat, never instead of it.
 
 ```bash
+# the whole package — grail Brainstem + this template + Frontier shell — in one pull:
+curl -sSfL https://raw.githubusercontent.com/kody-w/rapp-brainstem-frontier-template/main/scripts/bootstrap.sh | bash
+```
+
+Or piece by piece from a checkout:
+
+```bash
 ./scripts/start.sh          # installs the Brainstem if absent, launches Frontier
 ./scripts/install-skin.sh   # lands rapp_ui/example-skin into the running kernel
 ./scripts/revert-skin.sh    # removes it — the factory chat was never touched
